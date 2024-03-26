@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC3A6A292BB08DC300F5F607 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3A6A282BB08DC300F5F607 /* CounterView.swift */; };
 		BC55C1802BAC48A800D877CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55C17F2BAC48A800D877CC /* AppDelegate.swift */; };
 		BC55C1822BAC48A800D877CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55C1812BAC48A800D877CC /* SceneDelegate.swift */; };
-		BC55C1842BAC48A800D877CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55C1832BAC48A800D877CC /* ViewController.swift */; };
-		BC55C1872BAC48A800D877CC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BC55C1862BAC48A800D877CC /* Base */; };
+		BC55C1842BAC48A800D877CC /* ConfigureSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55C1832BAC48A800D877CC /* ConfigureSimulationViewController.swift */; };
 		BC55C1892BAC48AA00D877CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC55C1882BAC48AA00D877CC /* Assets.xcassets */; };
 		BC55C18C2BAC48AA00D877CC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BC55C18B2BAC48AA00D877CC /* Base */; };
+		BC55C1972BAD8A4200D877CC /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55C1962BAD8A4200D877CC /* TextFieldView.swift */; };
+		BC55C1992BADAE2D00D877CC /* SimulatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55C1982BADAE2D00D877CC /* SimulatorModel.swift */; };
+		BC55C19C2BADAE9500D877CC /* SimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55C19B2BADAE9500D877CC /* SimulationViewController.swift */; };
+		BC55C19E2BADAEA300D877CC /* SimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55C19D2BADAEA300D877CC /* SimulationViewModel.swift */; };
+		BC55C1A02BADAEB600D877CC /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55C19F2BADAEB600D877CC /* PersonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC3A6A282BB08DC300F5F607 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		BC55C17C2BAC48A800D877CC /* VKPlagueSimulationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKPlagueSimulationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC55C17F2BAC48A800D877CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC55C1812BAC48A800D877CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BC55C1832BAC48A800D877CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BC55C1862BAC48A800D877CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC55C1832BAC48A800D877CC /* ConfigureSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureSimulationViewController.swift; sourceTree = "<group>"; };
 		BC55C1882BAC48AA00D877CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC55C18B2BAC48AA00D877CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC55C18D2BAC48AA00D877CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC55C1962BAD8A4200D877CC /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		BC55C1982BADAE2D00D877CC /* SimulatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorModel.swift; sourceTree = "<group>"; };
+		BC55C19B2BADAE9500D877CC /* SimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewController.swift; sourceTree = "<group>"; };
+		BC55C19D2BADAEA300D877CC /* SimulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModel.swift; sourceTree = "<group>"; };
+		BC55C19F2BADAEB600D877CC /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,36 @@
 		BC55C17E2BAC48A800D877CC /* VKPlagueSimulationTest */ = {
 			isa = PBXGroup;
 			children = (
+				BC55C19A2BADAE7A00D877CC /* SimulationModule */,
 				BC55C17F2BAC48A800D877CC /* AppDelegate.swift */,
 				BC55C1812BAC48A800D877CC /* SceneDelegate.swift */,
-				BC55C1832BAC48A800D877CC /* ViewController.swift */,
-				BC55C1852BAC48A800D877CC /* Main.storyboard */,
+				BC55C1932BAD88EB00D877CC /* ConfigureSimulationModule */,
 				BC55C1882BAC48AA00D877CC /* Assets.xcassets */,
 				BC55C18A2BAC48AA00D877CC /* LaunchScreen.storyboard */,
 				BC55C18D2BAC48AA00D877CC /* Info.plist */,
 			);
 			path = VKPlagueSimulationTest;
+			sourceTree = "<group>";
+		};
+		BC55C1932BAD88EB00D877CC /* ConfigureSimulationModule */ = {
+			isa = PBXGroup;
+			children = (
+				BC55C1832BAC48A800D877CC /* ConfigureSimulationViewController.swift */,
+				BC55C1962BAD8A4200D877CC /* TextFieldView.swift */,
+				BC55C1982BADAE2D00D877CC /* SimulatorModel.swift */,
+			);
+			path = ConfigureSimulationModule;
+			sourceTree = "<group>";
+		};
+		BC55C19A2BADAE7A00D877CC /* SimulationModule */ = {
+			isa = PBXGroup;
+			children = (
+				BC55C19B2BADAE9500D877CC /* SimulationViewController.swift */,
+				BC55C19D2BADAEA300D877CC /* SimulationViewModel.swift */,
+				BC55C19F2BADAEB600D877CC /* PersonModel.swift */,
+				BC3A6A282BB08DC300F5F607 /* CounterView.swift */,
+			);
+			path = SimulationModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +158,6 @@
 			files = (
 				BC55C1892BAC48AA00D877CC /* Assets.xcassets in Resources */,
 				BC55C18C2BAC48AA00D877CC /* Base in Resources */,
-				BC55C1872BAC48A800D877CC /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +168,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC55C1842BAC48A800D877CC /* ViewController.swift in Sources */,
+				BC55C1842BAC48A800D877CC /* ConfigureSimulationViewController.swift in Sources */,
 				BC55C1802BAC48A800D877CC /* AppDelegate.swift in Sources */,
+				BC55C1972BAD8A4200D877CC /* TextFieldView.swift in Sources */,
+				BC55C19C2BADAE9500D877CC /* SimulationViewController.swift in Sources */,
+				BC55C1A02BADAEB600D877CC /* PersonModel.swift in Sources */,
 				BC55C1822BAC48A800D877CC /* SceneDelegate.swift in Sources */,
+				BC55C19E2BADAEA300D877CC /* SimulationViewModel.swift in Sources */,
+				BC55C1992BADAE2D00D877CC /* SimulatorModel.swift in Sources */,
+				BC3A6A292BB08DC300F5F607 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BC55C1852BAC48A800D877CC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC55C1862BAC48A800D877CC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BC55C18A2BAC48AA00D877CC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +325,6 @@
 				INFOPLIST_FILE = VKPlagueSimulationTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +352,6 @@
 				INFOPLIST_FILE = VKPlagueSimulationTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
