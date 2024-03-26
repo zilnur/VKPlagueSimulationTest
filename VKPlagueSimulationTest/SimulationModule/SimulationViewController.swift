@@ -24,7 +24,7 @@ class SimulationViewController: UIViewController {
         
         let groupWidth = CGFloat(self.viewModel.model[0].count) / 10
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(groupWidth * self.scale),
-                                               heightDimension: .fractionalWidth(0.15 * self.scale))
+                                               heightDimension: .fractionalHeight(0.1 * self.scale))
         
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
                                                          subitems: [item])
@@ -109,9 +109,10 @@ class SimulationViewController: UIViewController {
     ///Настройка датаСорса
     private func setDataSource() {
         
-        let regitration = UICollectionView.CellRegistration<UICollectionViewCell, Person> { [weak self] cell, indexPath, itemIdentifier in
+        let regitration = UICollectionView.CellRegistration<PersonCollectionViewCell, Person> { [weak self] cell, indexPath, itemIdentifier in
             guard let self else { return }
-            cell.backgroundColor = self.viewModel.model[indexPath.section][indexPath.item].isHealthy ? .green : .red
+//            cell.backgroundColor = self.viewModel.model[indexPath.section][indexPath.item].isHealthy ? .green : .red
+            cell.updateView(isHealthy: self.viewModel.model[indexPath.section][indexPath.item].isHealthy)
         }
         
         dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView, cellProvider: { collectionView, indexPath, itemIdentifier in
